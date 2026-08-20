@@ -1,0 +1,12 @@
+洛神繪社｜Netlify 藍新金流部署包
+
+1. 本資料夾必須「整個」部署，不能只上傳 index.html。
+2. Netlify 環境變數需包含：
+   NEWEBPAY_MERCHANT_ID
+   NEWEBPAY_HASH_KEY
+   NEWEBPAY_HASH_IV
+   NEWEBPAY_ENV=production
+3. 部署後先以最低金額測試信用卡及 ATM。
+4. HashKey、HashIV 不可寫入 HTML，也不可公開或傳給他人。
+5. 若更換正式網址，需同步修改 netlify/functions/newebpay-utils.mjs 的 SITE_URL。
+
